@@ -22,11 +22,15 @@ namespace TelaLogin
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtUsuario_Enter(object sender, EventArgs e)
         {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "Usuario";
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = Color.LightGray;
 
+            }
         }
-
-
     }
 }
